@@ -1,0 +1,16 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CC	Makefile	/^CC=gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS= -I..\/..\/include -g -Wall$/;"	m
+LIBS	Makefile	/^LIBS = ..\/..\/lib\/libunp.a -lpthread$/;"	m
+OBJS	Makefile	/^OBJS=$(SRCS:.c=.o)$/;"	m
+SRCS	Makefile	/^SRCS=$(wildcard *.c)$/;"	m
+main	cli.c	/^int main(int argc,char *argv[])$/;"	f
+main	ser.c	/^int main(void)$/;"	f
+sig_child	ser.c	/^void sig_child(int signo)$/;"	f
+str_cli	cli.c	/^void str_cli(FILE *fp,int sersock)$/;"	f
+str_echo	ser.c	/^void str_echo(int sockfd)$/;"	f

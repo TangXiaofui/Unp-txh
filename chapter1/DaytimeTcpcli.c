@@ -33,6 +33,7 @@ int main(int argc, char *argv[])
 
 	int len = sizeof(cliaddr);
 	Getsockname(sockfd,(SA *)&cliaddr,&len);
+	//getpeername(sockfd,(SA*)&cliaddr,&len);
 	printf("local addr:%s\n",Sock_ntop((SA*)&cliaddr,sizeof(cliaddr)));
 	printf("server addr:%s\n",Sock_ntop((SA*)&servaddr,sizeof(servaddr)));
 	int c = 0;
